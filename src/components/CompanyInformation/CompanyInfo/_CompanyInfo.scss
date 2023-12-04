@@ -1,0 +1,25 @@
+.CompanyInfo {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+
+  .CompanyInfoComponent {
+    width: 80%;
+    .CompanyInfoComponentBar {
+      width: 100%;
+      background-color: gray;
+    }
+    .CompanyText {
+      .CompanyInfoMain {
+        font-size: 16px;
+        font-weight: 550;
+        margin-bottom: 5px;
+      }
+      .CompanyInfoSub {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

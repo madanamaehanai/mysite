@@ -1,0 +1,42 @@
+.topbar {
+  width: 100%;
+  height: 80px;
+  background-color: #1b4c4c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topbar .home,
+.topbar .companyinformation {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px;
+  color: white;
+  font-weight: 550;
+}
+.topbar .home {
+  text-decoration-color: red;
+}
+.CompanyInfo {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+.CompanyInfo .CompanyInfoComponent {
+  width: 80%;
+}
+.CompanyInfo .CompanyInfoComponent .CompanyInfoComponentBar {
+  width: 100%;
+  background-color: gray;
+}
+.CompanyInfo .CompanyInfoComponent .CompanyText .CompanyInfoMain {
+  font-size: 16px;
+  font-weight: 550;
+  margin-bottom: 5px;
+}
+.CompanyInfo .CompanyInfoComponent .CompanyText .CompanyInfoSub {
+  margin-left: 0.5rem;
+}/*# sourceMappingURL=style.css.map */
