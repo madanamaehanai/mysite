@@ -1,36 +1,33 @@
 import React, { useRef } from "react";
 
 export default function MobileMenu() {
-  const containerRef = useRef();
-
-  const toggleHandler = () => {
-    // ここにメニューのトグルロジックを実装
-    console.log("Mobile menu clicked!");
-  };
   return (
-    <div
-      ref={containerRef}
-      className="mobile-menu-container"
-      onClick={toggleHandler}
-    >
+    <div className="mobile-menu-container">
       <ul className="mobile-menu__main">
         <li className="mobile-menu__item">
-          <a href="#">
-            <span className="main-title">aaaaa</span>
-            <span className="sub-title">bbbbb</span>
-          </a>
+          <Link
+            to="/mysite/"
+            className="topbarLink"
+            style={{ textDecoration: "none" }}
+          >
+            ホーム
+          </Link>
         </li>
         <li className="mobile-menu__item">
-          <a href="#">
-            <span className="main-title">aaaaa</span>
-            <span className="sub-title">bbbbb</span>
-          </a>
+          <Link
+            to="/mysite/companyinformation"
+            style={{ textDecoration: "none" }}
+          >
+            会社情報
+          </Link>
         </li>
         <li className="mobile-menu__item">
-          <a href="#">
-            <span className="main-title">aaaaa</span>
-            <span className="sub-title">bbbbb</span>
-          </a>
+          <Link
+            to="/mysite/companyinformation"
+            style={{ textDecoration: "none" }}
+          >
+            会社情報
+          </Link>
         </li>
       </ul>
     </div>

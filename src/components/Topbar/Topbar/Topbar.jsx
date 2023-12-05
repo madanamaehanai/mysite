@@ -1,20 +1,21 @@
+//Topbar.jsx
 import React, { useEffect } from "react";
 import "../../../styles/style/style.css";
 import { Link } from "react-router-dom";
-import MobileMenu from "../../../scripts/libs/mobile-menu";
+import Mobilemenu from "../../../scripts/libs/mobile-menu";
 
 export default function Topbar() {
   useEffect(() => {
-    const mobileMenu = new MobileMenu();
-    mobileMenu.DOM.container = document.querySelector("#topbarcomponent");
-    const toggleHandler = () => mobileMenu._toggle();
-    const eventType = mobileMenu._getEventType();
-    mobileMenu.DOM.container.addEventListener(eventType, toggleHandler);
+    const mobilemenu = new Mobilemenu();
+    mobilemenu.DOM.container = document.querySelector("#topbarcomponent");
+    const toggleHandler = () => mobilemenu._toggle();
+    const eventType = mobilemenu._getEventType();
+    mobilemenu.DOM.container.addEventListener(eventType, toggleHandler);
     // return () => {
-    //   mobileMenu.DOM.container.removeEventListener("click", toggleHandler);
+    //   mobilemenu.DOM.container.removeEventListener("click", toggleHandler);
     // };
     return () => {
-      mobileMenu.DOM.container.removeEventListener(eventType, toggleHandler);
+      mobilemenu.DOM.container.removeEventListener(eventType, toggleHandler);
     };
   }, []);
 
@@ -54,6 +55,7 @@ export default function Topbar() {
         </div>
       </div>
 
+      {/* <MobileMenu /> */}
       <div className="mobile-menu-container">
         <ul className="mobile-menu__main">
           <li className="mobile-menu__item">
