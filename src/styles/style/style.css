@@ -1,3 +1,20 @@
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+}
+
+.flex, .topbar .topbarlink {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .flex, .topbar .topbarlink {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .topbar {
   width: 100%;
   height: 80px;
@@ -6,16 +23,24 @@
   align-items: center;
   justify-content: center;
 }
-.topbar .home,
-.topbar .companyinformation {
-  list-style-type: none;
-  text-decoration: none;
-  font-size: 18px;
-  margin: 10px;
-  color: white;
-  font-weight: 550;
+.topbar .topbarlink {
+  display: none;
 }
-.topbar .home {
+@media screen and (min-width: 1024px) {
+  .topbar .topbarlink {
+    display: block;
+  }
+  .topbar .topbarlink .home,
+  .topbar .topbarlink .companyinformation {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px;
+    color: white;
+    font-weight: 550;
+  }
+}
+.topbar .topbarlink .home {
   text-decoration-color: red;
 }
 .CompanyInfo {
