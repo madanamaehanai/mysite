@@ -2,63 +2,65 @@
 @use "../../../styles/parts/" as *;
 
 .topbar {
-  width: 100%;
-  height: 80px;
-  background-color: #1b4c4c;
-  // transform: translate(-300px, 60px);
   //     color: red;
-
+  
   #topbarcomponent {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: transform 0.5s;
-    @extend .content-width;
+    width: 100%;
+    height: 80px;
+    background-color: #1b4c4c;
+    // transform: translate(-300px, 60px);
+    .TopBarComponent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: transform 0.5s;
+      @extend .content-width;
 
-    .topbarlogo {
-      color: white;
-    }
+      .topbarlogo {
+        color: white;
+      }
 
-    .topbarCenterComponent {
-      .topbarlink {
-        display: none;
-        @extend .flex;
+      .topbarCenterComponent {
+        .topbarlink {
+          display: none;
+          @extend .flex;
 
-        @include mq(lg) {
-          display: block;
-          display: flex;
-          .home,
+          @include mq(lg) {
+            display: block;
+            display: flex;
+            .home,
+            .companyinformation {
+              list-style-type: none;
+              text-decoration: none;
+              font-size: 18px;
+              margin: 10px;
+              color: white;
+              font-weight: 550;
+            }
+          }
+          .home {
+          }
           .companyinformation {
-            list-style-type: none;
-            text-decoration: none;
-            font-size: 18px;
-            margin: 10px;
-            color: white;
-            font-weight: 550;
           }
         }
-        .home {
-        }
-        .companyinformation {
-        }
       }
-    }
 
-    .topbarrightcomponent {
-      .humburgermenu__btn {
-        cursor: pointer;
-        @include mq(lg) {
-          display: none;
-        }
-        .humburgerbar1,
-        .humburgerbar2,
-        .humburgerbar3 {
-          width: 26px;
-          height: 2px;
-          background-color: red;
-        }
-        .humburgerbar2 {
-          margin: 5px 0;
+      .topbarrightcomponent {
+        .humburgermenu__btn {
+          cursor: pointer;
+          @include mq(lg) {
+            display: none;
+          }
+          .humburgerbar1,
+          .humburgerbar2,
+          .humburgerbar3 {
+            width: 26px;
+            height: 2px;
+            background-color: red;
+          }
+          .humburgerbar2 {
+            margin: 5px 0;
+          }
         }
       }
     }
@@ -71,9 +73,9 @@
   }
 }
 
-// .menu-open {
-//   #topbarcomponent {
-//     transform: translate(-300px, 60px);
-//     color: red;
-//   }
+// #topbarcomponent {
+   .menu-open {
+    transform: translate(-300px, 60px);
+    color: red;
+  }
 // }
