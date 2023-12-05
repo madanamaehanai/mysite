@@ -8,15 +8,19 @@ export default function Topbar() {
     const mobileMenu = new MobileMenu();
     mobileMenu.DOM.container = document.querySelector("#topbarcomponent");
     const toggleHandler = () => mobileMenu._toggle();
-    mobileMenu.DOM.container.addEventListener("click", toggleHandler);
+    const eventType = mobileMenu._getEventType();
+    mobileMenu.DOM.container.addEventListener(eventType, toggleHandler);
+    // return () => {
+    //   mobileMenu.DOM.container.removeEventListener("click", toggleHandler);
+    // };
     return () => {
-      mobileMenu.DOM.container.removeEventListener("click", toggleHandler);
+      mobileMenu.DOM.container.removeEventListener(eventType, toggleHandler);
     };
   }, []);
 
   return (
     <div className="topbar">
-      <div id="topbarcomponent" className="menu-open">
+      <div id="topbarcomponent" className="">
         <div className="TopBarComponent">
           <div className="topbarlogo">
             <p>〇〇工務店</p>
@@ -53,22 +57,29 @@ export default function Topbar() {
       <div className="mobile-menu-container">
         <ul className="mobile-menu__main">
           <li className="mobile-menu__item">
-            <a href="#">
-              <span className="main-title">aaaaa</span>
-              <span className="sub-title">bbbbb</span>
-            </a>
+            <Link
+              to="/mysite/"
+              className="topbarLink"
+              style={{ textDecoration: "none" }}
+            >
+              ホーム
+            </Link>
           </li>
           <li className="mobile-menu__item">
-            <a href="#">
-              <span className="main-title">aaaaa</span>
-              <span className="sub-title">bbbbb</span>
-            </a>
+            <Link
+              to="/mysite/companyinformation"
+              style={{ textDecoration: "none" }}
+            >
+              会社情報
+            </Link>
           </li>
           <li className="mobile-menu__item">
-            <a href="#">
-              <span className="main-title">aaaaa</span>
-              <span className="sub-title">bbbbb</span>
-            </a>
+            <Link
+              to="/mysite/companyinformation"
+              style={{ textDecoration: "none" }}
+            >
+              会社情報
+            </Link>
           </li>
         </ul>
       </div>
