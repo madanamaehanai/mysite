@@ -1,15 +1,15 @@
-.content-width {
+.content-width, .topbar .topbarcomponent {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
 }
 
-.flex, .topbar .topbarlink {
+.flex, .topbar .topbarcomponent .topbarCenterComponent .topbarlink {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
-  .flex, .topbar .topbarlink {
+  .flex, .topbar .topbarcomponent .topbarCenterComponent .topbarlink {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -19,19 +19,25 @@
   width: 100%;
   height: 80px;
   background-color: #1b4c4c;
+}
+.topbar .topbarcomponent {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-.topbar .topbarlink {
+.topbar .topbarcomponent .topbarlogo {
+  color: white;
+}
+.topbar .topbarcomponent .topbarCenterComponent .topbarlink {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .topbar .topbarlink {
+  .topbar .topbarcomponent .topbarCenterComponent .topbarlink {
     display: block;
+    display: flex;
   }
-  .topbar .topbarlink .home,
-  .topbar .topbarlink .companyinformation {
+  .topbar .topbarcomponent .topbarCenterComponent .topbarlink .home,
+  .topbar .topbarcomponent .topbarCenterComponent .topbarlink .companyinformation {
     list-style-type: none;
     text-decoration: none;
     font-size: 18px;
@@ -40,9 +46,25 @@
     font-weight: 550;
   }
 }
-.topbar .topbarlink .home {
-  text-decoration-color: red;
+.topbar .topbarcomponent .topbarrightcomponent .humburgermenu {
+  cursor: pointer;
 }
+@media screen and (min-width: 1024px) {
+  .topbar .topbarcomponent .topbarrightcomponent .humburgermenu {
+    display: none;
+  }
+}
+.topbar .topbarcomponent .topbarrightcomponent .humburgermenu .humburgerbar1,
+.topbar .topbarcomponent .topbarrightcomponent .humburgermenu .humburgerbar2,
+.topbar .topbarcomponent .topbarrightcomponent .humburgermenu .humburgerbar3 {
+  width: 26px;
+  height: 2px;
+  background-color: red;
+}
+.topbar .topbarcomponent .topbarrightcomponent .humburgermenu .humburgerbar2 {
+  margin: 5px 0;
+}
+
 .CompanyInfo {
   display: flex;
   margin-top: 50px;
