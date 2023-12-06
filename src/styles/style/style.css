@@ -1,4 +1,4 @@
-.content-width, .topbar #topbarcomponent .TopBarComponent {
+.content-width, .topbar #topbarcomponent .TopBarComponent, .conceptComponet__Imgs {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -26,7 +26,7 @@
 
 .houseImg {
   width: 100%;
-  height: 200px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -37,6 +37,36 @@
   }
 }
 
+.comceptImg {
+  width: 100px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0 4px;
+}
+@media screen and (min-width: 1024px) {
+  .comceptImg {
+    width: 30%;
+    height: 30vh;
+  }
+}
+
+.conceptComponet {
+  width: 90%;
+  height: 220px;
+  background-color: aqua;
+  margin: 100px auto 0;
+  display: flex;
+}
+.conceptComponet__Top {
+  height: 60%;
+}
+.conceptComponet__Textmain {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px auto;
+  text-align: center;
+}
 .topbar #topbarcomponent {
   width: 100%;
   height: 80px;
