@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import Topbar from "../../components/Topbar/Topbar/Topbar.jsx";
 import Main from "./components/main/Main.jsx";
+import Eventinfo from "./components/Eventinfo/Eventinfo.jsx";
 import Concept from "./components/Concept/Concept.jsx";
 import Aboutus from "./components/Aboutus/Aboutus.jsx";
 import MobileMenu from "../../components/Topbar/MobileMenu/MobileMenu.jsx";
@@ -26,7 +27,7 @@ export default function Home() {
       <div className="" id="mobilemove">
         <Topbar />
         <Main />
-        <div>concept</div>
+        <Eventinfo />
         <Concept />
         <Aboutus />
 

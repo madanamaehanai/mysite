@@ -53,13 +53,15 @@
 }
 
 .conceptComponet {
+  transform: translateY(-50px);
   width: 90%;
   height: 280px;
-  margin: 100px auto 0;
   display: flex;
   overflow: hidden;
   border-radius: 10px;
   background-color: rgba(219, 211, 201, 0.8);
+  margin: 0 auto;
+  z-index: 1;
 }
 @media screen and (min-width: 1024px) {
   .conceptComponet {
@@ -129,6 +131,36 @@
     transform: translateX(-100%);
   }
 }
+.Eventinfo {
+  width: 100%;
+  height: 40vh;
+  background-color: rgba(0, 255, 255, 0.1);
+  display: flex;
+  z-index: -1;
+}
+@media screen and (min-width: 1024px) {
+  .Eventinfo {
+    height: 65vh;
+  }
+}
+
+.Eventinfo__Item p {
+  margin-top: 50px;
+  margin-left: 10px;
+  width: 60px;
+  height: 180px;
+  background-color: gray;
+  border-radius: 10px;
+  flex-grow: 1;
+  animation: scroll 10s linear infinite;
+}
+@media screen and (min-width: 1024px) {
+  .Eventinfo__Item p {
+    width: 120px;
+    height: 360px;
+  }
+}
+
 .topbar #topbarcomponent {
   width: 100%;
   height: 80px;

@@ -26,13 +26,15 @@
 }
 
 .conceptComponet {
+  transform: translateY(-50px);
   width: 90%;
   height: 280px;
-  margin: 100px auto 0;
   display: flex;
   overflow: hidden;
   border-radius: 10px;
   background-color: rgb(219, 211, 201, 0.8);
+  margin: 0 auto;
+  z-index: 1;
   @include mq(lg) {
     width: 90%;
     height: 80vh;
@@ -92,7 +94,7 @@
       @extend .content-width;
       display: flex;
       // justify-content: space-between;
-margin: auto 0;
+      margin: auto 0;
       // & > :first-child {
       animation: scroll 10s linear infinite;
       // }
@@ -107,3 +109,43 @@ margin: auto 0;
     transform: translateX(-100%);
   }
 }
+
+// .div {
+// display: inline;
+.Eventinfo {
+  width: 100%;
+  height: 40vh;
+  background-color: rgba(0, 255, 255, 0.1);
+  display: flex;
+  z-index: -1;
+  @include mq(lg) {
+    height: 65vh;
+  }
+  // &__Items {
+  //   width: 30%;
+  //   height: 100%;
+  //   background-color: white;
+  //   .Eventinfo__Conteiner {
+  //     // overflow: hidden;
+
+  //   }
+  // }
+}
+.Eventinfo__Item {
+  p {
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 60px;
+    height: 180px;
+    background-color: gray;
+    border-radius: 10px;
+    flex-grow: 1;
+    animation: scroll 10s linear infinite;
+
+    @include mq(lg) {
+      width: 120px;
+      height: 360px;
+    }
+  }
+}
+// }
