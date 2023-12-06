@@ -1,23 +1,25 @@
 //Topbar.jsx
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
+import React from "react";
 import "../../../styles/style/style.css";
 import { Link } from "react-router-dom";
-import Mobilemenu from "../../../scripts/libs/mobile-menu";
+// import Mobilemenu from "../../../scripts/libs/mobile-menu";
+// import MobileMenu from "../MobileMenu/MobileMenu";
 
 export default function Topbar() {
-  useEffect(() => {
-    const mobilemenu = new Mobilemenu();
-    mobilemenu.DOM.container = document.querySelector("#topbarcomponent");
-    const toggleHandler = () => mobilemenu._toggle();
-    const eventType = mobilemenu._getEventType();
-    mobilemenu.DOM.container.addEventListener(eventType, toggleHandler);
-    // return () => {
-    //   mobilemenu.DOM.container.removeEventListener("click", toggleHandler);
-    // };
-    return () => {
-      mobilemenu.DOM.container.removeEventListener(eventType, toggleHandler);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const mobilemenu = new Mobilemenu();
+  //   mobilemenu.DOM.container = document.querySelector("#topbarcomponent");
+  //   const toggleHandler = () => mobilemenu._toggle();
+  //   const eventType = mobilemenu._getEventType();
+  //   mobilemenu.DOM.container.addEventListener(eventType, toggleHandler);
+  //   // return () => {
+  //   //   mobilemenu.DOM.container.removeEventListener("click", toggleHandler);
+  //   // };
+  //   return () => {
+  //     mobilemenu.DOM.container.removeEventListener(eventType, toggleHandler);
+  //   };
+  // }, []);
 
   return (
     <div className="topbar">
@@ -56,7 +58,7 @@ export default function Topbar() {
       </div>
 
       {/* <MobileMenu /> */}
-      <div className="mobile-menu-container">
+      {/* <div className="mobile-menu-container">
         <ul className="mobile-menu__main">
           <li className="mobile-menu__item">
             <Link
@@ -84,7 +86,7 @@ export default function Topbar() {
             </Link>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }

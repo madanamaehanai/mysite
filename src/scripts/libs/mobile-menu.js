@@ -2,7 +2,7 @@ class Mobilemenu {
     constructor() {
         this.DOM = {};
         this.DOM.btn = document.querySelector(".humburgermenu__btn");
-        this.DOM.container = document.querySelector(".topbarcomponent");
+        this.DOM.container = document.querySelector(".mobilemove");
         // this.DOM.cover = document.querySelector(".mobile-menu__cover");
         // this.eventType = this._getEventType();
         // this._addEvent();
