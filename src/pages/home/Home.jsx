@@ -4,6 +4,8 @@ import Topbar from "../../components/Topbar/Topbar/Topbar.jsx";
 import Main from "./components/main/Main.jsx";
 import Eventinfo from "./components/Eventinfo/Eventinfo.jsx";
 import Concept from "./components/Concept/Concept.jsx";
+import Case from "./components/Case/Case.jsx";
+import Customers from "./components/Customers/Customers.jsx";
 import Aboutus from "./components/Aboutus/Aboutus.jsx";
 import MobileMenu from "../../components/Topbar/MobileMenu/MobileMenu.jsx";
 import Mobilemenu from "../../scripts/libs/mobile-menu";
@@ -29,6 +31,8 @@ export default function Home() {
         <Main />
         <Eventinfo />
         <Concept />
+        <Case />
+        <Customers />
         <Aboutus />
 
       </div>

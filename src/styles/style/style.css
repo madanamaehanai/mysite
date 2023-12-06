@@ -120,7 +120,7 @@
 .conceptComponet__buttom__Imgs {
   display: flex;
   margin: auto 0;
-  animation: scroll 10s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 @keyframes scroll {
@@ -133,22 +133,23 @@
 }
 .Eventinfo {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   background-color: rgba(0, 255, 255, 0.1);
   display: flex;
   z-index: -1;
+  overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
   .Eventinfo {
-    height: 65vh;
+    height: 77vh;
   }
 }
 
 .Eventinfo__Item p {
   margin-top: 50px;
   margin-left: 10px;
-  width: 60px;
-  height: 180px;
+  width: 110px;
+  height: 300px;
   background-color: gray;
   border-radius: 10px;
   flex-grow: 1;
@@ -156,9 +157,46 @@
 }
 @media screen and (min-width: 1024px) {
   .Eventinfo__Item p {
-    width: 120px;
-    height: 360px;
+    width: 250px;
+    height: 460px;
   }
+}
+
+.aboutus {
+  width: 100;
+  height: 230px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+.aboutuscontainer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  border-radius: 10px;
+}
+.aboutuscontainer__top {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.aboutuscontainer__Img {
+  width: 90%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.aboutuscontainer__text {
+  color: white;
+  font-size: 16px;
+}
+.aboutuscontainer__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  background-color: rgba(240, 255, 255, 0.075);
+  border-radius: 10px;
 }
 
 .topbar #topbarcomponent {

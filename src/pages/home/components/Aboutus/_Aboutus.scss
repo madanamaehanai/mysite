@@ -1,0 +1,44 @@
+@use "../../../../styles/globals/" as *;
+@use "../../../../styles/parts/" as *;
+
+.aboutus {
+  width: 100;
+  height: 230px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  // display: flex;
+
+  &container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    border-radius: 10px;
+
+    &__top {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    &__Img {
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    &__text {
+        color: white;
+        font-size: 16px;
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      background-color: rgba(240, 255, 255, 0.075);
+      border-radius: 10px;
+    }
+  }
+}
