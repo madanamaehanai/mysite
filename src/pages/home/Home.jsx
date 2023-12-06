@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Topbar from "../../components/Topbar/Topbar/Topbar.jsx";
+import Main from "./components/main/Main.jsx";
 import MobileMenu from "../../components/Topbar/MobileMenu/MobileMenu.jsx";
 import Mobilemenu from "../../scripts/libs/mobile-menu";
 
@@ -21,9 +22,11 @@ export default function Home() {
     <>
       <div className="" id="mobilemove">
         <Topbar />
+        <Main />
         <div>Home</div>
+
       </div>
       <MobileMenu />
-    </>
+    </> 
   );
 }
