@@ -1,3 +1,4 @@
+//mobile
 class Mobilemenu {
     constructor() {
         this.DOM = {};

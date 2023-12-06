@@ -1,4 +1,4 @@
-.content-width, .topbar #topbarcomponent .TopBarComponent, .conceptComponet__Imgs {
+.content-width, .topbar #topbarcomponent .TopBarComponent, .conceptComponet__Imgs, .conceptComponet__buttom__Imgs {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -38,34 +38,96 @@
 }
 
 .comceptImg {
-  width: 100px;
-  height: 80px;
+  width: 80px;
+  height: 60px;
   -o-object-fit: cover;
      object-fit: cover;
   padding: 0 4px;
+  cursor: pointer;
 }
 @media screen and (min-width: 1024px) {
   .comceptImg {
-    width: 30%;
-    height: 30vh;
+    width: 220px;
+    height: 170px;
   }
 }
 
 .conceptComponet {
   width: 90%;
-  height: 220px;
-  background-color: aqua;
+  height: 280px;
   margin: 100px auto 0;
   display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: rgba(219, 211, 201, 0.8);
+}
+@media screen and (min-width: 1024px) {
+  .conceptComponet {
+    width: 90%;
+    height: 80vh;
+  }
 }
 .conceptComponet__Top {
-  height: 60%;
+  height: 70%;
 }
-.conceptComponet__Textmain {
+.conceptComponet__Top__Textmain {
+  height: 10%;
   font-size: 18px;
   font-weight: 600;
   margin: 5px auto;
   text-align: center;
+}
+.conceptComponet__Top__Imgs {
+  height: 90%;
+  display: flex;
+}
+.conceptComponet__Top__Imgs__Text {
+  flex: 40%;
+}
+.conceptComponet__Top__Imgs__Img {
+  flex: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conceptComponet__Top__Imgs__Img .comceptImg {
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.conceptComponet__item {
+  width: 100%;
+}
+.conceptComponet__buttom {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.conceptComponet__buttom .conceptbox {
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  margin: 0 auto;
+}
+.conceptComponet__buttom__Imgs {
+  display: flex;
+  margin: auto 0;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 .topbar #topbarcomponent {
   width: 100%;

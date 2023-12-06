@@ -1,7 +1,9 @@
+//Home.jsx
 import React, { useEffect } from "react";
 import Topbar from "../../components/Topbar/Topbar/Topbar.jsx";
 import Main from "./components/main/Main.jsx";
 import Concept from "./components/Concept/Concept.jsx";
+import Aboutus from "./components/Aboutus/Aboutus.jsx";
 import MobileMenu from "../../components/Topbar/MobileMenu/MobileMenu.jsx";
 import Mobilemenu from "../../scripts/libs/mobile-menu";
 
@@ -26,6 +28,7 @@ export default function Home() {
         <Main />
         <div>concept</div>
         <Concept />
+        <Aboutus />
 
       </div>
       <MobileMenu />

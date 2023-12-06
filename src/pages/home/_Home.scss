@@ -13,37 +13,97 @@
 }
 
 .comceptImg {
-  width: 100px;
-  height: 80px;
+  width: 80px;
+  height: 60px;
   object-fit: cover;
   padding: 0 4px;
+  cursor: pointer;
 
   @include mq(lg) {
-    width: 30%;
-    height: 30vh;
+    width: 220px;
+    height: 170px;
   }
 }
 
 .conceptComponet {
   width: 90%;
-  height: 220px;
-  background-color: aqua;
+  height: 280px;
   margin: 100px auto 0;
   display: flex;
-  
-  &__Top {
-    height: 60%;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: rgb(219, 211, 201, 0.8);
+  @include mq(lg) {
+    width: 90%;
+    height: 80vh;
   }
-  &__Textmain {
-    font-size: 18px;
-    font-weight: 600;
-    // display: flex;
-    margin: 5px auto;
-    text-align: center
+
+  &__Top {
+    height: 70%;
+    &__Textmain {
+      height: 10%;
+      font-size: 18px;
+      font-weight: 600;
+      // display: flex;
+      margin: 5px auto;
+      text-align: center;
+    }
+    &__Imgs {
+      height: 90%;
+      display: flex;
+      &__Text {
+        flex: 40%;
+      }
+      &__Img {
+        flex: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .comceptImg {
+          width: 80%;
+          height: 80%;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+      }
+    }
   }
   &__item {
+    width: 100%;
   }
   &__Imgs {
     @extend .content-width;
+  }
+  &__buttom {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.2);
+    .conceptbox {
+      width: 80%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      margin: 0 auto;
+    }
+    &__Imgs {
+      @extend .content-width;
+      display: flex;
+      // justify-content: space-between;
+margin: auto 0;
+      // & > :first-child {
+      animation: scroll 10s linear infinite;
+      // }
+    }
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
