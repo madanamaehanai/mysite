@@ -17,6 +17,11 @@
 
 .menu-open {
   transform: translate(-300px, 60px);
+  box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+}
+
+#mobilemove {
+  transition: all 0.5s;
 }
 
 .topbar #topbarcomponent {
@@ -28,7 +33,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: transform 0.5s;
 }
 .topbar #topbarcomponent .TopBarComponent .topbarlogo {
   color: white;
@@ -69,11 +73,18 @@
 .topbar #topbarcomponent .TopBarComponent .topbarrightcomponent .humburgermenu__btn .humburgerbar2 {
   margin: 5px 0;
 }
-.topbar .mobile-menu-container {
+
+.mobile-menu-container {
   position: fixed;
   right: 0;
   top: 30px;
   z-index: -1;
+}
+.mobile-menu-container ul {
+  list-style: none;
+}
+.mobile-menu-container ul a {
+  color: black;
 }
 
 .CompanyInfo {

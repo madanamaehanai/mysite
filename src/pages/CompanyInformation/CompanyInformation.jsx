@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Topbar from "../../components/Topbar/Topbar/Topbar.jsx";
 import CompanyInfo from "../../components/CompanyInformation/CompanyInfo/CompanyInfo.jsx";
 import MobileMenu from "../../components/Topbar/MobileMenu/MobileMenu.jsx";
-import Mobilemenu from "../../scripts/libs/mobile-menu";
+import Mobilemenu from "../../scripts/libs/mobile-menu.js";
 
 export default function CompanyInformation() {
   useEffect(() => {
